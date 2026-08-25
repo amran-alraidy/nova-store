@@ -279,11 +279,7 @@ nav button:hover {
 }
 .banner-3 .par-2{
   padding-left: 40px;
-   /* background-image: radial-gradient(
-    circle at 50% 0%,
-    rgba(37, 99, 235, 0.12) 0%,
-    rgba(248, 250, 252, 0) 75%
-  ); */
+   
 }
 .banner-3 .par-2 p{
   font-size: 15px;
