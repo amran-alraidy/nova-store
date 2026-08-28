@@ -738,6 +738,7 @@ nav button:hover {
   }
   .banner .container .par-1 {
     font-weight: 700;
+    text-align:center;
     /* width: 400px; */
   }
   .banner .container h1 {
