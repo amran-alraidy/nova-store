@@ -775,7 +775,7 @@ nav button:hover {
     width: 100%;
     display: none;
     flex-direction: column;
-    background-color: rgb(171, 171, 255);
+    background-color: rgb(131, 184, 237);
     justify-content: center;
     align-items: center;
     padding: 15px;
