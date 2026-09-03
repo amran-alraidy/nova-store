@@ -59,7 +59,7 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-  color: rgb(150, 150, 250);
+  color: blue;
 }
 nav h1 {
   font-weight: 900;
