@@ -26,6 +26,9 @@ nav {
   padding-left: 40px;
   padding-right: 40px;
   background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
 }
 nav ul {
   display: flex;
@@ -107,7 +110,7 @@ nav button:hover {
 }
 
 .banner {
-  height: 88vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
