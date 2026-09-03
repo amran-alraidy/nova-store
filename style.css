@@ -36,10 +36,27 @@ nav ul li a {
   text-decoration: none;
   color: black;
   transition-duration: 0.2s;
+  position: relative;
+  padding-bottom: 5px;
 }
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0%;
+  height: 2px;
+  background-color: blue;
+  transition-duration: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
 nav ul li a:hover {
   color: rgb(150, 150, 250);
-  text-decoration: underline;
 }
 nav h1 {
   font-weight: 900;
@@ -72,6 +89,21 @@ nav button:hover {
   background-color: blue;
   color: white;
   transform: translateY(-2px);
+}
+
+.menubtn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(237, 237, 237);
+  border: 1px solid rgb(116, 116, 250);
+  padding: 7px;
+  border-radius: 3px;
+}
+.menubtn .line {
+  width: 20px;
+  height: 2px;
+  background-color: blue;
 }
 
 .banner {
@@ -731,14 +763,39 @@ nav button:hover {
     max-width: 500px;
   }
 }
+
+@media (max-width: 850px) {
+  nav ul {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: rgb(171, 171, 255);
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    top: 90px;
+    z-index: 1000;
+  }
+  .active {
+    display: flex;
+  }
+  .menubtn {
+    display: flex;
+  }
+}
 @media (max-width: 550px) {
+  nav h1 {
+    font-size: 20px;
+  }
   .banner {
     padding-left: 40px;
     padding-right: 40px;
   }
   .banner .container .par-1 {
     font-weight: 700;
-    text-align:center;
+    text-align: center;
     /* width: 400px; */
   }
   .banner .container h1 {
