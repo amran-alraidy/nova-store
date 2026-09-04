@@ -207,6 +207,8 @@ nav button:hover {
   font-size: 16px;
   font-weight: 900;
   transition-duration: 0.3s;
+  /* border: none; */
+  border: 1px solid rgb(218, 216, 216) ;
 }
 .banner .container .btns .btn-right:hover {
   border-color: rgb(89, 97, 213);
